@@ -1,0 +1,10 @@
+.kiemelt {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#cipokartya {
+	border: 1px solid #ccc;
+	padding: 16px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}

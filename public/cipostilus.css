@@ -1,0 +1,92 @@
+:root {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: #202624;
+  background: #f7f8f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f7f8f5 0%, #e8eee9 100%);
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 44px 0 28px;
+}
+
+.page-shell > h1 {
+  margin: 0 0 26px;
+  color: #183b35;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+}
+
+#cipokartya {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #d2d9d3;
+  box-shadow: 0 3px 12px rgb(31 49 39 / 10%);
+}
+
+.shoe-card {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgb(32 38 36 / 12%);
+  border-radius: 6px;
+  box-shadow: 0 2px 7px rgb(31 49 39 / 9%);
+}
+
+.shoe-card h2 {
+  margin: 0 0 14px;
+}
+
+.shoe-card p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.kiemelt {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.edition-status {
+  padding-top: 10px;
+  border-top: 1px solid rgb(32 38 36 / 18%);
+  font-weight: 600;
+}
+
+.page-footer {
+  margin-top: 18px;
+  color: #46534c;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+@media (max-width: 520px) {
+  .page-shell {
+    width: min(100% - 24px, 1120px);
+    padding-top: 28px;
+  }
+
+  .page-shell > h1 {
+    font-size: 2rem;
+  }
+
+  #cipokartya {
+    padding: 12px;
+  }
+}
